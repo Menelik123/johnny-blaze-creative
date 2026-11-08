@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Johnny Blaze Creative: bold branding, digital design and creative campaigns in Port Harcourt, Nigeria.">
+  <meta name="theme-color" content="#080b12">
+  <title>Johnny Blaze Creative | Bold Branding &amp; Design</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body class="is-loading">
+
+  <!-- ===== LOADER ===== -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-word"><span>B</span><span>L</span><span>A</span><span>Z</span><span>E</span></div>
+      <div class="loader-bar"><i></i></div>
+      <div class="loader-count"><span id="loaderCount">0</span>%</div>
+    </div>
+    <div class="loader-panel p1"></div><div class="loader-panel p2"></div><div class="loader-panel p3"></div>
+  </div>
+
+  <!-- ===== GLOBAL FX ===== -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+  <div class="cursor" aria-hidden="true"><div class="cursor-dot"></div><div class="cursor-ring"><span class="cursor-label"></span></div></div>
+
+  <header class="site-header" id="nav">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Johnny Blaze Creative home" data-hover>
+        <img class="logo" src="images/logo.png" alt="">
+        <span>JOHNNY BLAZE <strong>CREATIVE</strong></span>
+      </a>
+      <nav class="main-nav" id="navLinks" aria-label="Main navigation">
+        <a href="#home" data-hover>HOME</a>
+        <a href="#about" data-hover>ABOUT</a>
+        <a href="#gallery" data-hover>GALLERY</a>
+        <a href="#founder" data-hover>FOUNDER</a>
+        <a href="#contact" data-hover>CONTACT</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <canvas id="embers" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-inner section-wrap">
+        <div class="hero-copy">
+          <p class="eyebrow reveal-up"><i class="pulse"></i>GRAPHIC DESIGN AGENCY <span>•</span> PORT HARCOURT</p>
+          <h1>
+            <span class="line"><span class="split">CREATIVE.</span></span>
+            <span class="line"><span class="split blue">BOLD.</span></span>
+            <span class="line"><span class="split flame">IMPACTFUL.</span></span>
+          </h1>
+          <p class="hero-description reveal-up">We design striking creative campaigns, branding, and visual content that sets your brand on fire. From artist covers to luxury fashion labels.</p>
+          <div class="hero-actions reveal-up">
+            <a class="button button-primary magnetic" href="#gallery" data-hover><span>Our Portfolio <b aria-hidden="true">→</b></span></a>
+            <a class="button button-outline magnetic" href="https://wa.me/message/Y6BMDPXEVTITE1" target="_blank" rel="noopener" data-hover><span>Chat</span></a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="tilt-wrap" id="heroTilt">
+            <div class="hero-image">
+              <img src="images/gallery-music-cover.jpg" alt="Featured design work: John Eseigbe music artist cover">
+              <div class="glare"></div>
+            </div>
+            <div class="float-chip c1">✦ Branding</div>
+            <div class="float-chip c2">◎ Cover Art</div>
+            <div class="float-chip c3">▲ Campaigns</div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-badge" aria-label="Scroll to About" data-hover>
+        <svg viewBox="0 0 100 100" aria-hidden="true"><defs><path id="circlePath" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs><text><textPath href="#circlePath">SCROLL • JOHNNY BLAZE • CREATIVE • </textPath></text></svg>
+        <span class="arrow">↓</span>
+      </a>
+    </section>
+
+    <div class="marquee-wrap" aria-hidden="true">
+      <div class="marquee m1"><div class="track">
+        <span>BRANDING</span><b>✦</b><span>COVER ART</span><b>✦</b><span>LOGO DESIGN</span><b>✦</b><span>CAMPAIGNS</span><b>✦</b><span>PRINT</span><b>✦</b>
+        <span>BRANDING</span><b>✦</b><span>COVER ART</span><b>✦</b><span>LOGO DESIGN</span><b>✦</b><span>CAMPAIGNS</span><b>✦</b><span>PRINT</span><b>✦</b>
+      </div></div>
+      <div class="marquee m2"><div class="track">
+        <span class="o">SET YOUR BRAND ON FIRE</span><b>✸</b><span class="o">SET YOUR BRAND ON FIRE</span><b>✸</b><span class="o">SET YOUR BRAND ON FIRE</span><b>✸</b>
+        <span class="o">SET YOUR BRAND ON FIRE</span><b>✸</b><span class="o">SET YOUR BRAND ON FIRE</span><b>✸</b><span class="o">SET YOUR BRAND ON FIRE</span><b>✸</b>
+      </div></div>
+    </div>
+
+    <section class="about section-wrap" id="about">
+      <div class="section-heading">
+        <p class="eyebrow scramble" data-text="WHO WE ARE">WHO WE ARE</p>
+        <h2 class="reveal-up">ABOUT US</h2>
+      </div>
+      <p class="about-text" id="aboutText">JOHNNY BLAZE CREATIVE is a creative studio specializing in bold branding, digital design, and cultural campaigns. Founded by Amb. John Eseigbe. We blend strategy with creativity to craft visuals that capture attention and spark conversation.</p>
+    </section>
+
+    <section class="gallery section-wrap" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow scramble" data-text="OUR PORTFOLIO">OUR PORTFOLIO</p>
+        <h2 class="reveal-up">GALLERY</h2>
+        <p class="section-subtitle reveal-up">Recent designs</p>
+      </div>
+      <div class="gallery-grid">
+        <article class="gallery-card reveal-clip" data-cursor="VIEW">
+          <div class="gallery-image"><img src="images/gallery-luxury-logo.jpg" alt="Luxury Designs logo" loading="lazy"><div class="glare"></div></div>
+          <div class="card-caption"><h3>Luxury Designs</h3><p>Logo Design</p></div>
+        </article>
+        <article class="gallery-card reveal-clip" data-cursor="VIEW">
+          <div class="gallery-image"><img src="images/gallery-business-card.jpg" alt="Luxury business card for Belema Ogolo" loading="lazy"><div class="glare"></div></div>
+          <div class="card-caption"><h3>Luxury Business Card</h3><p>Belema Ogolo</p></div>
+        </article>
+        <article class="gallery-card reveal-clip" data-cursor="VIEW">
+          <div class="gallery-image"><img src="images/gallery-passion-1.jpg" alt="Passion for Passion exercise book cover, sunset edition" loading="lazy"><div class="glare"></div></div>
+          <div class="card-caption"><h3>Passion for Passion</h3><p>Exercise Book 1</p></div>
+        </article>
+        <article class="gallery-card reveal-clip" data-cursor="VIEW">
+          <div class="gallery-image"><img src="images/gallery-passion-2.jpg" alt="Passion for Passion exercise book cover, city lights edition" loading="lazy"><div class="glare"></div></div>
+          <div class="card-caption"><h3>Passion for Passion</h3><p>Exercise Book 2</p></div>
+        </article>
+        <article class="gallery-card reveal-clip" data-cursor="VIEW">
+          <div class="gallery-image"><img src="images/gallery-friday-quote.jpg" alt="Friday quote graphic: these eyes create trends" loading="lazy"><div class="glare"></div></div>
+          <div class="card-caption"><h3>Friday Quote</h3><p>These eyes create trends</p></div>
+        </article>
+        <article class="gallery-card reveal-clip" data-cursor="VIEW">
+          <div class="gallery-image"><img src="images/gallery-music-cover.jpg" alt="John Eseigbe music artist cover" loading="lazy"><div class="glare"></div></div>
+          <div class="card-caption"><h3>John Eseigbe</h3><p>Music Artist Cover</p></div>
+        </article>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+      <button class="lb-close" id="lbClose" aria-label="Close" data-hover>✕</button>
+      <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous image" data-hover>←</button>
+      <figure><img id="lbImg" src="" alt=""><figcaption id="lbCap"></figcaption></figure>
+      <button class="lb-nav lb-next" id="lbNext" aria-label="Next image" data-hover>→</button>
+    </div>
+
+    <section class="founder section-wrap" id="founder">
+      <div class="founder-photo reveal-up">
+        <div class="photo-frame"><img src="images/founder.jpg" alt="Amb. John Eseigbe, founder and CEO"></div>
+        <div class="founder-badge" aria-hidden="true">
+          <svg viewBox="0 0 100 100"><defs><path id="circle2" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs><text><textPath href="#circle2">FOUNDER • CEO • VISIONARY • </textPath></text></svg>
+          <span>✸</span>
+        </div>
+      </div>
+      <div class="founder-copy">
+        <p class="eyebrow scramble" data-text="THE PERSON BEHIND THE BRAND">THE PERSON BEHIND THE BRAND</p>
+        <p class="small-title reveal-up">Meet the Founder</p>
+        <h2 class="reveal-up">Amb. John Eseigbe</h2>
+        <p class="founder-role reveal-up">CEO - JOHNNY BLAZE CREATIVE</p>
+        <blockquote class="reveal-up">“It is very important to know who you are. To make decisions. To show who you are. The path to success is to take massive and determined action.”</blockquote>
+        <p class="reveal-up">Based in Port Harcourt, Rivers State, Nigeria. Student at Enitonna High School. Creative strategist passionate about bold, authentic design.</p>
+      </div>
+    </section>
+
+    <section class="contact section-wrap" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow scramble" data-text="LET'S WORK TOGETHER">LET'S WORK TOGETHER</p>
+        <h2 class="contact-title"><span class="split">CONTACT &amp;</span> <span class="split flame">BOOKING</span></h2>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-details reveal-up">
+          <p><span>Email</span><a href="mailto:johneseigbe4@gmail.com" data-hover>johneseigbe4@gmail.com</a></p>
+          <p><span>Phone</span><a href="tel:08068817666" data-hover>08068817666</a></p>
+          <p><span>WhatsApp</span><a href="https://wa.me/message/Y6BMDPXEVTITE1" target="_blank" rel="noopener" data-hover>08120712205</a></p>
+          <a class="button button-primary whatsapp-button magnetic" href="https://wa.me/message/Y6BMDPXEVTITE1" target="_blank" rel="noopener" data-hover><span>Chat on WhatsApp</span></a>
+        </div>
+        <!-- Wired for Netlify Forms (same "booking" form the live site uses). Submissions land in Netlify > Forms. -->
+        <form class="booking-form spotlight reveal-up" name="booking" action="/thank-you" method="post" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="booking">
+          <p class="hidden-field"><label>Don't fill this out: <input name="bot-field"></label></p>
+          <label for="name">Your Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+          <label for="email">Your Email</label>
+          <input id="email" name="email" type="email" placeholder="Your email address" required>
+          <label for="message">How can we help?</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your project"></textarea>
+          <button class="button button-primary magnetic" type="submit" data-hover><span>Book Now <b aria-hidden="true">→</b></span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-giant" aria-hidden="true">JOHNNY BLAZE</div>
+    <p>© 2026 JOHNNY BLAZE CREATIVE. All rights reserved. <span>|</span> <a href="mailto:johneseigbe4@gmail.com" data-hover>johneseigbe4@gmail.com</a></p>
+  </footer>
+
+  <script src="main.js?v=2"></script>
+</body>
+</html>
