@@ -2,7 +2,10 @@
 
 Animated portfolio website for Johnny Blaze Creative (Port Harcourt).
 
-Live preview: https://johnny-blaze-creative.vercel.app
+Live site: https://johnny-blaze-creative.vercel.app
+Also hosted from this repo: https://menelik123.github.io/johnny-blaze-creative/
+
+> Viewing a file on GitHub shows its code, not the designed page. Use the links above to see the site.
 
 ## What's inside
 
@@ -16,7 +19,9 @@ No build step and no frameworks. It is plain HTML, CSS and JavaScript.
 
 ## Run it locally
 
-Open `index.html` in a browser, or serve the folder:
+1. Click the green **Code** button, then **Download ZIP**.
+2. Unzip it and keep every file in the same folder (`index.html` needs `style.css`, `main.js` and `images/` beside it, or it loads without styling).
+3. Double-click `index.html`, or serve the folder:
 
 ```bash
 npx serve .
