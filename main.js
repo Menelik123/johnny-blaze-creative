@@ -340,10 +340,11 @@
 
 /* ---------- booking form fallback ----------
    Netlify Forms only works when hosted on Netlify. Anywhere else
-   (Vercel preview, local), send the booking to WhatsApp prefilled. */
+   (Vercel, GitHub Pages, opened from a downloaded folder), send the
+   booking to WhatsApp prefilled. */
 (() => {
   const form = document.querySelector('.booking-form');
-  if (!form || !/vercel\.app$|^localhost$|^127\.0\.0\.1$/.test(location.hostname)) return;
+  if (!form || /netlify\.app$/.test(location.hostname)) return;
   form.addEventListener('submit', e => {
     e.preventDefault();
     const d = new FormData(form);
